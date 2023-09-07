@@ -2,6 +2,7 @@
   font-size: 20px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 @media (max-width: 1920px) {
@@ -20,7 +21,7 @@
     align-items: center;
   }
 
-  .header .right {
+  .header .main-nav {
     display: flex;
     padding: 10px;
     flex: auto;
@@ -28,11 +29,11 @@
     align-items: center;
   }
 
-  .header .right .item {
+  .header .main-nav .item {
     padding: 0 20px;
   }
 
-  .header .right .menu {
+  .header .main-nav .menu {
     display: none;
   }
 
@@ -99,12 +100,12 @@
 }
 
 @media (max-width: 800px) {
-  .header .right .item {
+  .header .main-nav .item {
     display: none;
     padding: 0 20px;
   }
 
-  .header .right .menu {
+  .header .main-nav .menu {
     height: 30px;
     display: block;
   }
@@ -115,7 +116,7 @@
     font-size: 16px;
   }
 
-  .header .right .menu {
+  .header .main-nav .menu {
     height: 30px;
     display: block;
   }
