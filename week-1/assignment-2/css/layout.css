@@ -57,11 +57,6 @@
     text-align: center;
   }
 
-  .top .box {
-    display: flex;
-    background-color: #ddd0c8;
-  }
-
   .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
