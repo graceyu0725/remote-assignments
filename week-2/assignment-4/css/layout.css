@@ -37,6 +37,12 @@
     display: none;
   }
 
+  .header .main-nav .mobile-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+  }
+
   .title {
     background-color: #ddd0c8;
     height: 250px;
@@ -46,7 +52,12 @@
     margin-bottom: 20px;
   }
 
-  .body {
+  .title:hover {
+    cursor: pointer;
+  }
+
+  .body,
+  .more-boxes {
     width: 1200px;
     margin: 0px auto;
     margin-bottom: 20px;
@@ -55,11 +66,6 @@
   .top {
     font-size: 1.2rem;
     text-align: center;
-  }
-
-  .top .box {
-    display: flex;
-    background-color: #ddd0c8;
   }
 
   .bottom {
@@ -76,12 +82,14 @@
     padding: 10px;
   }
 
-  .button {
+  .footer {
+    width: 1200px;
+    margin: 0px auto;
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .button button {
+  .footer button {
     font-size: 16px;
     width: 120px;
     height: 40px;
@@ -89,10 +97,20 @@
     background-color: #eeeeee;
     padding: 2px;
   }
+
+  .footer button:hover {
+    cursor: pointer;
+  }
+
+  .more-boxes {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
-  .body {
+  .body,
+  .footer,
+  .more-boxes {
     width: 90%;
     margin: 0px auto;
     margin-bottom: 20px;
@@ -108,6 +126,42 @@
   .header .main-nav .menu {
     height: 30px;
     display: block;
+  }
+
+  .header .main-nav .menu:hover {
+    cursor: pointer;
+  }
+
+  .header .main-nav .mobile-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: #fff9;
+  }
+
+  .header .main-nav .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header .main-nav .mobile-menu ul li {
+    margin: 10px;
+    padding: 0;
+  }
+
+  .header .main-nav .mobile-menu .close-button {
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .header .main-nav .mobile-menu .close-button:hover {
+    cursor: pointer;
   }
 }
 
