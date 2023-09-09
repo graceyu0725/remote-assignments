@@ -11,3 +11,6 @@
 
 - assignment-4: HTML DOM and Event Handling  
   [GitHub Page](https://graceyu0725.github.io/remote-assignments/week-2/assignment-4)
+
+- assignment-5: Algorithm  
+  [GitHub Page](https://graceyu0725.github.io/remote-assignments/week-2/assignment-5)
