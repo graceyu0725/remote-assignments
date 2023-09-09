@@ -43,10 +43,10 @@ let showMore = document.querySelector(".cta");
 let moreBoxes = document.querySelector(".more-boxes");
 
 showMore.addEventListener("click", () => {
-  if (showMore.textContent === "Show More") {
+  if (moreBoxes.style.display === "") {
     moreBoxes.style.display = "block";
     showMore.textContent = "Show Less";
-  } else if (showMore.textContent === "Show Less") {
+  } else if (moreBoxes.style.display === "block") {
     moreBoxes.style.display = "none";
     showMore.textContent = "Show More";
   }
