@@ -4,7 +4,7 @@ When the user clicks on the "Welcome Message" block,
 change text to "Have a Good Time!".
 */
 
-let changeTitle = document.querySelector(".title");
+const changeTitle = document.querySelector(".title");
 
 changeTitle.addEventListener("click", () => {
   if (changeTitle.textContent === "Welcome Message") {
@@ -20,9 +20,9 @@ When the user clicks the menu at the top-right corner,
 show the hidden mobile menu. After that, the user can click the close button to hide it.
 */
 
-let openMenu = document.querySelector(".menu");
-let mobileMenu = document.querySelector(".mobile-menu");
-let closeMenu = document.querySelector(".close-button");
+const openMenu = document.querySelector(".menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeMenu = document.querySelector(".close-button");
 
 openMenu.addEventListener("click", () => {
   mobileMenu.style.display = "block";
@@ -39,8 +39,8 @@ When the user clicks the Call-to-Action button,
 show those hidden content boxes.
 */
 
-let showMore = document.querySelector(".cta");
-let moreBoxes = document.querySelector(".more-boxes");
+const showMore = document.querySelector(".cta");
+const moreBoxes = document.querySelector(".more-boxes");
 
 showMore.addEventListener("click", () => {
   if (moreBoxes.style.display === "") {
