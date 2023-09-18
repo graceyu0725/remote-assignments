@@ -23,9 +23,9 @@ router.get("/getData", (req, res) => {
   res.send(result);
 });
 
-router.get("/sum.html", (req, res) => {
-  const fileName = path.resolve(__dirname, "../public/sum.html");
-  res.sendFile(fileName);
-});
+// router.get("/sum.html", (req, res) => {
+//   const fileName = path.resolve(__dirname, "../public/sum.html");
+//   res.sendFile(fileName);
+// });
 
 module.exports = router;
