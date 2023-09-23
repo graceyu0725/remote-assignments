@@ -1,20 +1,20 @@
 import {useState} from "react";
 
 function Main(props) {
-  const [clicks, setClicks] = useState(0);
+  const [clicks, setClicks] = useState(true);
 
   const handleClick = () => {
-    if (clicks === 0) {
-      setClicks(1);
+    if (clicks) {
+      setClicks(false);
     } else {
-      setClicks(0);
+      setClicks(true);
     }
   };
 
   return (
     <main>
       <div className="title" onClick={handleClick}>
-        {clicks === 0 ? "Welcome Message" : "Have a Good Time!"}
+        {clicks ? "Welcome Message" : "Have a Good Time!"}
       </div>
       <div className="body">
         <div className="top">Section Title</div>

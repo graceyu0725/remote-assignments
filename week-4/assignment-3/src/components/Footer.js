@@ -1,16 +1,13 @@
 import {useState} from "react";
 
 function Footer(props) {
-  const [showMore, setShowMore] = useState(0);
-  const [showText, setShowText] = useState(0);
+  const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
-    if (showMore === 0) {
-      setShowMore(1);
-      setShowText(1);
+    if (showMore === false) {
+      setShowMore(true);
     } else {
-      setShowMore(0);
-      setShowText(0);
+      setShowMore(false);
     }
   };
 
@@ -18,10 +15,10 @@ function Footer(props) {
     <>
       <footer className="footer">
         <button type="button" className="cta" onClick={handleShowMore}>
-          {showText === 0 ? "Show More" : "Show Less"}
+          {showMore ? "Show Less" : "Show More"}
         </button>
       </footer>
-      {showMore === 1 && (
+      {showMore && (
         <div className="more-boxes">
           <div className="bottom">
             <div className="box">Content Box 5</div>
