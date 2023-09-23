@@ -8,11 +8,11 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/week-4/assignment-3/">
+    <HashRouter>
       <Header />
       <Main />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
