@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/remote-assignments/week-4-assignment-4/static/css/main.5a14da22.css",
+    "main.js": "/remote-assignments/week-4-assignment-4/static/js/main.fc691bf1.js",
+    "index.html": "/remote-assignments/week-4-assignment-4/index.html",
+    "main.5a14da22.css.map": "/remote-assignments/week-4-assignment-4/static/css/main.5a14da22.css.map",
+    "main.fc691bf1.js.map": "/remote-assignments/week-4-assignment-4/static/js/main.fc691bf1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a14da22.css",
+    "static/js/main.fc691bf1.js"
+  ]
+}
