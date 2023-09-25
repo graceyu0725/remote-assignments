@@ -1,22 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
 import Counter from "./components/Counter";
 
 function App() {
-  // track the number of counters
-  const [counterNum, setCounterNum] = useState(3);
   // create an array to track the count for each counter separately
-  const [counterCounts, setCounterCounts] = useState(Array(counterNum).fill(0));
+  const [counterCounts, setCounterCounts] = useState([0, 0, 0]);
 
   // add one counter and set the new counter's count equals to zero
   const addCounter = () => {
-    setCounterNum(counterNum + 1);
     setCounterCounts([...counterCounts, 0]);
   };
 
   // iterate through the counters and increment their respective counts
   const incrementAll = () => {
-    setCounterCounts(prevCounts => prevCounts.map(count => count + 1));
+    setCounterCounts((prevCounts) => prevCounts.map((count) => count + 1));
   };
 
   // manage the count state for each counter and pass the count and an update function to each Counter component
@@ -28,7 +25,11 @@ function App() {
   };
 
   const counterComponents = counterCounts.map((count, index) => (
-    <Counter key={index} count={count} onIncrement={() => handleIncrement(index)}/>
+    <Counter
+      key={index}
+      count={count}
+      onIncrement={() => handleIncrement(index)}
+    />
   ));
 
   // useEffect(() => {
@@ -37,9 +38,13 @@ function App() {
 
   return (
     <div className="container">
-      <button className="all" onClick={incrementAll}>All +1</button>
+      <button className="all" onClick={incrementAll}>
+        All +1
+      </button>
       <div>{counterComponents}</div>
-      <button className="add" onClick={addCounter}>Add a Counter</button>
+      <button className="add" onClick={addCounter}>
+        Add a Counter
+      </button>
     </div>
   );
 }
