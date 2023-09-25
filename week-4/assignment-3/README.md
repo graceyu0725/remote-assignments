@@ -1,4 +1,4 @@
-[GitHub Page](https://graceyu0725.github.io/remote-assignments/)
+[GitHub Page](https://graceyu0725.github.io/remote-assignments/week-4-assignment-3)
 
 ##### Re-Implement Layout by React
 
