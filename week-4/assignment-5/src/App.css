@@ -1,0 +1,52 @@
+* {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.container {
+  padding: 20px;
+  border: 2px #c1c9ce dashed;
+  line-height: 40px;
+  width: 200px;
+}
+
+.container .number {
+  color: #72797e;
+  margin-left: 15px;
+}
+
+.container .all,
+.container .ind {
+  width: 80px;
+  padding: 1px 0px;
+  border: 2px #72797e solid;
+  background-color: #fff;
+  color: #72797e;
+}
+
+.container .all {
+  margin-bottom: 20px;
+}
+
+.container .add {
+  width: 160px;
+  padding: 1px 0px;
+  border: 2px #72797e solid;
+  background-color: #fff;
+  color: #72797e;
+  margin-top: 20px;
+}
+
+.container button:hover {
+  cursor: pointer;
+}
